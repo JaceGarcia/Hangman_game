@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+#button1{
+    position: absolute;
+    right: 100px;
+}
+#button2{
+    position: absolute;
+    left: 100px;
+}
