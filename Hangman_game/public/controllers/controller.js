@@ -1,8 +1,3 @@
-$(function(){
-$("#button1").click(function(){
-    alert("this is the alert button");
-});
-})
 
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];{
 
@@ -28,15 +23,24 @@ function letterMatched (){
         if(lettersSelected === randomWords[i]){
             spaces[i] = lettersSelected;
             $('#wordPlayed').text(spaces.join(' '));
-
-
 }}};
 
+function wrongLetters(){
+    for(var i = 0; i < randomWords.length; i++){
+        if(lettersSelected !== randomWords[i]){
+            spaces[i] != lettersSelected;
+            $(event.currentTarget).css('color', 'red');
+         }
+    }
+}
 
-    $('.Abuttons').on('click', function(event){
-        lettersSelected = $(event.currentTarget).text();
-            letterMatched();
-
-
-console.log('.Abuttons')
-        });
+$('.Abuttons').on('click', function(event){
+    lettersSelected = $(event.currentTarget).text();
+        letterMatched();
+        wrongLetters();
+    });
+$(function(){
+    $("#button1").click(function(){
+        alert("this is the alert button");
+    });
+    })
