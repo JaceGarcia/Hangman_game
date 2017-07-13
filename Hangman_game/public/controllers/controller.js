@@ -38,6 +38,11 @@ function wrongLetters(event){
          }
     }
 }
+//function gameOver(){
+if(trysLeft === 0){
+    $('#trys').html('GAME OVER!!!!');
+    $('#keyboardLetters').off('click');
+};
 $('.Abuttons').on('click', function(event){
     lettersSelected = $(event.currentTarget).text();
         letterMatched();
