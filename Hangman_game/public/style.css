@@ -20,3 +20,6 @@ body{
 .wordplay_wrapper {
     width: 800px;
 }
+.active {
+  background-color: red !important;
+}

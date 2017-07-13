@@ -29,7 +29,8 @@ function wrongLetters(){
     for(var i = 0; i < randomWords.length; i++){
         if(lettersSelected !== randomWords[i]){
             spaces[i] != lettersSelected;
-            $(event.currentTarget).css('color', 'red');
+            $(event.currentTarget).addClass("active");
+
          }
     }
 }
