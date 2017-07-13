@@ -1,11 +1,22 @@
 body{
     text-align: center;
 }
-#button1{
-    position: absolute;
-    right: 100px;
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
 }
-#button2{
-    position: absolute;
-    left: 100px;
+.underlines{
+    display: inline-block;
+    padding: 0 50px;
+    margin: 0 15px 20px;
+    width: 100px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.wordplay_wrapper {
+    width: 800px;
 }
