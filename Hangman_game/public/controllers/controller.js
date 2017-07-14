@@ -4,7 +4,7 @@ var words = ['abisselfa', 'wagon', 'buckaroo', 'charro', 'ranahan', 'rep', 'cowm
 var randomNumber = Math.floor(words.length * Math.random());
 var randomWord = words[randomNumber];
 var arrRandomWord = randomWord.split('');
-var trysLeft = 6;
+var triesLeft = 6;
 var letterSelected;
 var i;
 var spaces = [];
@@ -24,7 +24,7 @@ function init() {
 
     $('#wordPlayed').append(spaces);
 
-    $('#trys').html('Trys Left '+ trysLeft)
+    $('#tries').html('Tries Left '+ triesLeft)
 
     for(i = 0; i < alphabet.length; i++) {
         $('#keyboardLetters').append('<div class="btn btn-success letters ">'+alphabet[i]+'</div>');
@@ -33,12 +33,13 @@ function init() {
     createListeners();
 }
 
-function createListeners() {
+function createListeners(){
     $('.letters').on('click', function(event){
         letterSelected = $(event.currentTarget).text();
         letterMatched();
         disableLetter(event);
         decrementTries();
+        winner();
     });
 
     $("#instructions").click(function(){
@@ -57,12 +58,15 @@ function letterMatched (){
 
 function decrementTries(){
     if(randomWord.indexOf(letterSelected) === -1){
-        trysLeft -=1;
-        if(trysLeft === 0){
-            $('#trys').html('Gameover');
+        triesLeft -=1;
+        if(triesLeft === 0){
+            $('#tries').html('Gameover');
             $('.letters').off('click');
         } else {
-            $('#trys').html('Trys Left '+ trysLeft)
+            $('#tries').html('Tries Left '+ triesLeft)
+        }
+        if(spaces.indexOf('_ ' === -1)){
+            $('#tries').html('You win');
         }
     }
 }
