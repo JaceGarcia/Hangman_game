@@ -24,7 +24,7 @@ function init() {
 
     $('#wordPlayed').append(spaces);
 
-    $('#tries').html('Tries Left '+ triesLeft)
+    $('#tries').html('Tries Left '+ triesLeft);
 
     for(i = 0; i < alphabet.length; i++) {
         $('#keyboardLetters').append('<div class="btn btn-success letters ">'+alphabet[i]+'</div>');
@@ -39,11 +39,10 @@ function createListeners(){
         letterMatched();
         disableLetter(event);
         decrementTries();
-        winner();
     });
 
-    $("#instructions").click(function(){
-        alert("this is the alert button");
+    $("#about").click(function(){
+        alert("");
     });
 }
 
@@ -54,19 +53,19 @@ function letterMatched (){
             $('#wordPlayed').text(spaces.join(' '));
         }
     }
+    if(spaces.indexOf('_ ') === -1){
+        $('#tries').html('You win');
+    }
 }
 
 function decrementTries(){
-    if(randomWord.indexOf(letterSelected) === -1){
-        triesLeft -=1;
+     if(randomWord.indexOf(letterSelected) === -1){
+         triesLeft -=1;
         if(triesLeft === 0){
             $('#tries').html('Gameover');
             $('.letters').off('click');
         } else {
             $('#tries').html('Tries Left '+ triesLeft)
-        }
-        if(spaces.indexOf('_ ' === -1)){
-            $('#tries').html('You win');
         }
     }
 }
