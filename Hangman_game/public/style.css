@@ -16,13 +16,6 @@ body{
     width: 50%;
 }
 
-.instructions{
-    position:absolute;
-transition: .5s ease;
-   left: 202px;
-   top: 198px;
-}
-
 .letters {
     margin-left: 2px;
 }
@@ -43,6 +36,13 @@ transition: .5s ease;
 
 .wordplay_wrapper {
     width: 800px;
+}
+
+#instructions{
+    position:absolute;
+transition: .5s ease;
+   right: 120px;
+   top: 18px;
 }
 
 
