@@ -1,6 +1,13 @@
 body{
     text-align: center;
+    background: #CCCC00;
+     background: -webkit-linear-gradient(left top, #CCCC00, #66FFCC);
+   }
+
+.active {
+  opacity: 0.2;
 }
+
 .container{
     text-align: center;
     display: flex;
@@ -8,6 +15,18 @@ body{
     justify-content: space-around;
     width: 50%;
 }
+
+.instructions{
+    position:absolute;
+transition: .5s ease;
+   left: 202px;
+   top: 198px;
+}
+
+.letters {
+    margin-left: 2px;
+}
+
 .underlines{
     display: inline-block;
     padding: 0 50px;
@@ -17,23 +36,17 @@ body{
     border-bottom-style: solid;
 }
 
+.underscores {
+    display: inline-block;
+    margin-left: 25px;
+}
+
 .wordplay_wrapper {
     width: 800px;
 }
-.active {
-  opacity: 0.2;
-}
+
 
 #trys{
     font-size: 40px;
     font-style: bold;
-}
-
-.letters {
-    margin-left: 2px;
-}
-
-.underscores {
-    display: inline-block;
-    margin-left: 25px;
 }
