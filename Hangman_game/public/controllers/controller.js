@@ -1,6 +1,6 @@
 
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var words = ['jace', 'richared', 'david', 'janea'];
+var words = ['abisselfa', 'wagon', 'buckaroo', 'charro', 'ranahan', 'rep', 'cowman', 'cowboy', 'drover', 'rustler', 'peeler', 'shoer'];
 var randomNumber = Math.floor(words.length * Math.random());
 var randomWord = words[randomNumber];
 var arrRandomWord = randomWord.split('');
@@ -18,7 +18,7 @@ function init() {
         }
     }
 
-    $('#button2').click(function(reloadPage){
+    $('#new').click(function(reloadPage){
         window.location.reload();
     })
 
