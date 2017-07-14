@@ -62,7 +62,7 @@ function decrementTries(){
             $('#tries').html('Gameover');
             $('.letters').off('click');
             $('.wordplay_wrapper').empty('spaces');
-            alert(arrRandomWord.join(' '));
+            alert(arrRandomWord.join(''));
         } else {
             $('#tries').html('Tries Left '+ triesLeft)
         }
