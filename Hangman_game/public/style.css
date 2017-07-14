@@ -26,4 +26,14 @@ body{
 
 #trys{
     font-size: 40px;
+    font-style: bold;
+}
+
+.letters {
+    margin-left: 2px;
+}
+
+.underscores {
+    display: inline-block;
+    margin-left: 25px;
 }
