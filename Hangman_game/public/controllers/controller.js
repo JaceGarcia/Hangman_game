@@ -11,16 +11,9 @@ var spaces = [];
 
 
 function init() {
-    for(i = 0; i < arrRandomWord.length; i++){
-
         for(i = 0; i < arrRandomWord.length; i++){
             spaces.push('_ ');
         }
-    }
-
-    $('#new').click(function(reloadPage){
-        window.location.reload();
-    })
 
     $('#wordPlayed').append(spaces);
 
@@ -42,8 +35,12 @@ function createListeners(){
     });
 
     $("#about").click(function(){
-        alert("");
+        alert("alert");
     });
+
+    $('#new').click(function(reloadPage){
+        window.location.reload();
+    })
 }
 
 function letterMatched (){
@@ -64,6 +61,7 @@ function decrementTries(){
         if(triesLeft === 0){
             $('#tries').html('Gameover');
             $('.letters').off('click');
+            $('.wordplay_wrapper').empty('spaces');
         } else {
             $('#tries').html('Tries Left '+ triesLeft)
         }
