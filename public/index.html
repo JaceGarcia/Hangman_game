@@ -9,15 +9,20 @@
     <title>Hangman game</title>
 </head>
 <header>
-    <h1>Western Hangman</h1>
+    <h1>Geography Hangman</h1>
 </header>
 <body>
-    <button class="btn btn-primary" id="button1">Instructions</button>
-    <button class="btn btn-primary" id="button2">New word</button>
-<span id="trys"><h2>trys</h2></span>
-<span id="wrongLetters"><h2>wrong letters</h2></span>
-<div id="keyboardLetters"></div>
-<div id="wordPlayed"></div>
+    <button class="btn btn-primary" id="about">About</button>
+    <button class="btn btn-primary" id="new">New word</button>
+    <div id="tries"><h2></h2></div>
+    <div id="wrong-letters"></div>
+    <div class = 'container'>
+        <div id="wordPlayed" class="wordplay_wrapper"></div>
+    </div>
+    <div id="keyboardLetters"></div>
+    <canvas id="canvas" width="400px" height="270px" >
+    Your browser does not support HTML5 Canvas element
+    </canvas>
 </body>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

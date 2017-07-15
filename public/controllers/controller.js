@@ -1,6 +1,6 @@
 
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var words = ['abisselfa', 'wagon', 'buckaroo', 'charro', 'ranahan', 'rep', 'cowman', 'cowboy', 'drover', 'rustler', 'peeler', 'shoer'];
+var words = ['afghanistan', 'albania', 'brazil', 'botswana', 'canada', 'cuba', 'denmark', 'dominica', 'egypt', 'ethiopia', 'fiji', 'finland', 'france', 'gabon', 'greece', 'hati', 'honduras', 'india', 'iran', 'japan', 'jordan', 'kenya', 'kuuait', 'libya'];
 var randomNumber = Math.floor(words.length * Math.random());
 var randomWord = words[randomNumber];
 var arrRandomWord = randomWord.split('');
@@ -8,7 +8,8 @@ var triesLeft = 6;
 var letterSelected;
 var i;
 var spaces = [];
-
+var canvas= $('canvas');
+var c= canvas.getcontext('2d');
 
 function init() {
         for(i = 0; i < arrRandomWord.length; i++){
@@ -52,6 +53,7 @@ function letterMatched (){
     }
     if(spaces.indexOf('_ ') === -1){
         $('#tries').html('You win');
+        $('.letters').off('click');
     }
 }
 

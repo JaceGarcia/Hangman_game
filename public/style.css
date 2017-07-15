@@ -48,6 +48,9 @@ transition: .5s ease;
    right: 120px;
    top: 18px;
 }
+#canvas{
+    border: 1px solid black;
+}
 
 #keyboardLetters{
     position:absolute;
