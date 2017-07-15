@@ -1,5 +1,5 @@
 
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var alphabet = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'];
 var words = ['afghanistan', 'albania', 'brazil', 'botswana', 'canada', 'cuba', 'denmark', 'dominica', 'egypt', 'ethiopia', 'fiji', 'finland', 'france', 'gabon', 'greece', 'hati', 'honduras', 'india', 'iran', 'japan', 'jordan', 'kenya', 'kuuait', 'libya'];
 var randomNumber = Math.floor(words.length * Math.random());
 var randomWord = words[randomNumber];
@@ -8,20 +8,52 @@ var triesLeft = 6;
 var letterSelected;
 var i;
 var spaces = [];
-var canvas= $('canvas');
-var c= canvas.getcontext('2d');
+var canvas = document.querySelector("canvas");
+console.log(canvas);
+var c = canvas.getContext('2d');
+
+//Hangman frame
+
+c.beginPath();
+c.moveTo(240, 260);
+c.lineTo(350, 260);
+c.stroke();
+c.moveTo(300, 20);
+c.lineTo(300, 260);
+c.stroke();
+c.moveTo(300, 20);
+c.lineTo(215, 20);
+c.stroke();
+c.moveTo(215, 20);
+c.lineTo(215, 30);
+c.stroke();
+
+
+
+
+
+
+
 
 function init() {
-        for(i = 0; i < arrRandomWord.length; i++){
-            spaces.push('_ ');
-        }
+    var counter = 0;
+    var kbLength0 = 9;
+    var kbLength1 = 9;
+
+    for(i = 0; i < arrRandomWord.length; i++){
+        spaces.push('_ ');
+    }
 
     $('#wordPlayed').append(spaces);
 
     $('#tries').html('Tries Left '+ triesLeft);
 
     for(i = 0; i < alphabet.length; i++) {
-        $('#keyboardLetters').append('<div class="btn btn-success letters ">'+alphabet[i]+'</div>');
+        $('#kb' + counter).append('<div class="btn btn-info letters ">'+alphabet[i]+'</div>');
+
+        if (i === kbLength0 || i === kbLength1 + kbLength1) {
+            counter++;
+        }
     }
 
     createListeners();

@@ -4,8 +4,18 @@ body{
      background: -webkit-linear-gradient(left top, #CCCC00, #66FFCC);
    }
 
+canvas{
+    border: 1px solid black;
+}
+
 .active {
-  opacity: 0.2;
+  opacity: 0.3;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }
 
 .container{
@@ -13,15 +23,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 50%;
-    position:absolute;
-transition: .5s ease;
-    right: 376px;
-    top: 400px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .letters {
-    margin-left: 2px;
+    margin: 2px;
 }
 
 .underlines{
@@ -44,26 +52,19 @@ transition: .5s ease;
 
 #about{
     position:absolute;
-transition: .5s ease;
-   right: 120px;
-   top: 18px;
-}
-#canvas{
-    border: 1px solid black;
+    right: 120px;
+    top: 18px;
 }
 
 #keyboardLetters{
-    position:absolute;
-transition: .5s ease;
-    right: 270px;
-    top: 500px;
+    width: 100%;
+    text-align: center;
 }
 
 #new{
     position:absolute;
-transition: .5s ease;
-   right: 120px;
-   top: 66px;
+    right: 120px;
+    top: 66px;
 }
 
 #tries{
