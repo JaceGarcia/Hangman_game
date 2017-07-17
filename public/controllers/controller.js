@@ -57,7 +57,7 @@ function createListeners(){
     });
 
     $("#about").click(function(){
-        alert("alert");
+        alert("This is a game of hangman and the goal is to guess the country before you fun out of tries. ");
     });
 
     $('#new').click(function(reloadPage){
