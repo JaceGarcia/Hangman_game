@@ -1,6 +1,6 @@
 
 var alphabet = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'];
-var words = ['afghanistan', 'albania', 'brazil', 'botswana', 'canada', 'cuba', 'denmark', 'dominica', 'egypt', 'ethiopia', 'fiji', 'finland', 'france', 'gabon', 'greece', 'hati', 'honduras', 'india', 'iran', 'japan', 'jordan', 'kenya', 'kuuait', 'libya'];
+var words = ['afghanistan', 'albania', 'brazil', 'botswana', 'canada', 'cuba', 'denmark', 'dominica', 'egypt', 'ethiopia', 'fiji', 'finland', 'france', 'gabon', 'greece', 'hati', 'honduras', 'india', 'iran', 'japan', 'jordan', 'kenya', 'kuwait', 'libya'];
 var arrBodyLines = ['leftLeg', 'rightLeg', 'rightArm', 'leftArm','Torso', 'Head'];
 var randomNumber = Math.floor(words.length * Math.random());
 var randomWord = words[randomNumber];
