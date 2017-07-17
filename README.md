@@ -23,6 +23,6 @@
 ### Working hangman when you miss
 
 ## Wireframe
- ![](Screen Shot 2017-07-17 at 12.13.52 PM)
+https://gomockingbird.com/projects/uai856h/TnMd3U
 ## Future Goals
 ### Make it mobile, Categories, level selector, animations for when you lose and for when you win
