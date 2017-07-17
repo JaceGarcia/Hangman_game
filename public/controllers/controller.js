@@ -103,6 +103,9 @@ function decrementTries(){
             c.moveTo(220,43);
             c.lineTo(227,50);
             c.stroke();
+            c.beginPath();
+            c.arc(215, 60, 6, 0, Math.PI * 1, true);
+            c.stroke();
         }
     }
 }
