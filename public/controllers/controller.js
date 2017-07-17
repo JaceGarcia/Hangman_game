@@ -5,7 +5,6 @@ var arrBodyLines = ['leftLeg', 'rightLeg', 'rightArm', 'leftArm','Torso', 'Head'
 var randomNumber = Math.floor(words.length * Math.random());
 var randomWord = words[randomNumber];
 var arrRandomWord = randomWord.split('');
-//var triesLeft = 6;
 var letterSelected;
 var i;
 var spaces = [];
@@ -22,8 +21,6 @@ function init() {
     }
 
     $('#wordPlayed').append(spaces);
-
-//    $('#tries').html('Tries Left '+ triesLeft);
 
     for(i = 0; i < alphabet.length; i++) {
         $('#kb' + counter).append('<div class="btn btn-success letters ">'+alphabet[i]+'</div>');
@@ -89,6 +86,23 @@ function decrementTries(){
             $('.letters').off('click');
             $('.wordplay_wrapper').empty('spaces');
             alert(arrRandomWord.join(''));
+            //Dead eyes
+            c.beginPath();
+            c.moveTo(207,43);
+            c.lineTo(212,50);
+            c.stroke();
+            c.beginPath();
+            c.moveTo(214,43);
+            c.lineTo(205,50);
+            c.stroke();
+            c.beginPath();
+            c.moveTo(227,43);
+            c.lineTo(220,50);
+            c.stroke();
+            c.beginPath();
+            c.moveTo(220,43);
+            c.lineTo(227,50);
+            c.stroke();
         }
     }
 }
