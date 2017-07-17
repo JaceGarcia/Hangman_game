@@ -32,6 +32,17 @@ header{
     margin-bottom: 20px;
 }
 
+.flag-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags{
+    opacity: .5;
+}
+
 .letters {
     margin: 3px;
     font-size: 20px;
@@ -69,6 +80,6 @@ header{
 
 #new{
     position:absolute;
-    right: 120px;
-    top: 66px;
+    right: 200px;
+    top: 18px;
 }
