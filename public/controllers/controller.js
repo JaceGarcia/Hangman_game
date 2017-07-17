@@ -80,6 +80,7 @@ function letterMatched (){
         $('.letters').off('click');
     }
 }
+
 function decrementTries(){
      if(randomWord.indexOf(letterSelected) === -1){
          drawLines(arrBodyLines.pop());
