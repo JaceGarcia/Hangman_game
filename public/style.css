@@ -8,6 +8,10 @@ canvas{
     border: 0px solid black;
 }
 
+h1{
+    font-size: 50px;
+}
+
 header{
     font-family: 'Yellowtail' , serif;
 }
