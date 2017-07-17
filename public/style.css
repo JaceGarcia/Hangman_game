@@ -1,7 +1,7 @@
 body{
     text-align: center;
-    background: #CCCC00;
-     background: -webkit-linear-gradient(left top, #CCCC00, #66FFCC);
+    background: #2754E3;
+     background: -webkit-linear-gradient(left top, #2754E3, #66FFCC);
    }
 
 canvas{
@@ -12,7 +12,7 @@ canvas{
   opacity: 0.3;
 }
 
-.btn-info {
+.btn-success {
     color: #fff;
     background-color: #000;
     border-color: #000;

@@ -26,7 +26,7 @@ function init() {
 //    $('#tries').html('Tries Left '+ triesLeft);
 
     for(i = 0; i < alphabet.length; i++) {
-        $('#kb' + counter).append('<div class="btn btn-info letters ">'+alphabet[i]+'</div>');
+        $('#kb' + counter).append('<div class="btn btn-success letters ">'+alphabet[i]+'</div>');
 
         if (i === kbLength0 || i === kbLength1 + kbLength1) {
             counter++;
